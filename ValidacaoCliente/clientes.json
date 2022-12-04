@@ -1,0 +1,50 @@
+﻿[
+    {
+        "nome": "Pedro de Almeida",
+        "cpf": "29585098008",
+        "dt_nascimento": "15/02/1996",
+        "renda_mensal": "3584,12",
+        "estado_civil": "S",
+        "dependentes": "0"
+    },
+    {
+        "nome": "Ana Beatriz",
+        "cpf": "34645846078",
+        "dt_nascimento": "28/10/2000",
+        "renda_mensal": "2810,25",
+        "estado_civil": "S",
+        "dependentes": "0"
+    },
+    {
+        "nome": "Andre Rocha",
+        "cpf": "69024641039",
+        "dt_nascimento": "07/05/1984",
+        "renda_mensal": "4110,39",
+        "estado_civil": "S",
+        "dependentes": "0"
+    },
+    {
+        "nome": "Fernanda Pinheiro",
+        "cpf": "21386403024",
+        "dt_nascimento": "04/12/1972",
+        "renda_mensal": "5850,27",
+        "estado_civil": "C",
+        "dependentes": "1"
+    },
+    {
+        "nome": "Joice Medeiros",
+        "cpf": "60904708055",
+        "dt_nascimento": "21/07/1991",
+        "renda_mensal": "10254,48",
+        "estado_civil": "C",
+        "dependentes": "2"
+    },
+    {
+        "nome": "Carlos Roberto",
+        "cpf": "96154144091",
+        "dt_nascimento": "14/09/1966",
+        "renda_mensal": "8387,92",
+        "estado_civil": "C",
+        "dependentes": "3"
+    }
+]

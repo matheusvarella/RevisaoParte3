@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text.Json;
 
 namespace ValidacaoCliente
 {
@@ -19,7 +18,8 @@ namespace ValidacaoCliente
                     clienteErros.Add(new ClienteErro(clienteComErro));
             }
 
-            EscreverClienteErroJson.EscreverClientesErrosJson(clienteErros);
+            if (clienteErros.Count > 0)
+                EscreverClienteErroJson.EscreverClientesErrosJson(clienteErros);
         }
     }
 }

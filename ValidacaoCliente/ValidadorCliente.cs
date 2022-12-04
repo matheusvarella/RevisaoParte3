@@ -36,7 +36,7 @@ namespace ValidacaoCliente
             var erro = new Dictionary<string, string>();
 
             if (nome.Length < 5)
-                erro.Add("nome", "O nome deve possuir pelo menos 5 caracteres!");
+                erro.Add("nome", "Nome deve ter pelo menos 5 caracteres");
 
             if (erro.Count > 0)
                 return erro;
@@ -48,8 +48,8 @@ namespace ValidacaoCliente
         {
             var erro = new Dictionary<string, string>();
 
-            if (cpf.CpfValido())
-                erro.Add("cpf", "O CPF informado e invalido!");
+            if (!cpf.CpfValido())
+                erro.Add("cpf", "CPF invalido");
 
             if (erro.Count > 0)
                 return erro;
@@ -68,7 +68,7 @@ namespace ValidacaoCliente
                 idade--;
             
             if (idade <= 18)
-                erro.Add("dt_nascimento", "O cliente e menor de idade!");
+                erro.Add("dt_nascimento", "Data de nascimento invalida");
 
             if (erro.Count > 0)
                 return erro;
@@ -83,7 +83,7 @@ namespace ValidacaoCliente
             var erro = new Dictionary<string, string>();
 
             if (renda < 0)
-                erro.Add("renda_mensal", "A renda mensal deve ser maior ou igual a zero!");
+                erro.Add("renda_mensal", "Renda mensal invalida");
 
             if (erro.Count > 0)
                 return erro;
@@ -98,7 +98,7 @@ namespace ValidacaoCliente
             var caracter = estadoCivil.ToString().ToUpper();
 
             if (caracter != "C" && caracter != "S" && caracter != "V" && caracter != "D")
-                erro.Add("estado_civil", "O estado civil informado é inválido!");
+                erro.Add("estado_civil", "Estado civil invalido");
 
             if (erro.Count > 0)
                 return erro;
@@ -113,7 +113,7 @@ namespace ValidacaoCliente
             var erro = new Dictionary<string, string>();
 
             if (quantidadeDependentes < 0 || quantidadeDependentes > 10)
-                erro.Add("dependentes", "O número de dependentes informados é inválido!");
+                erro.Add("dependentes", "Numero de dependentes invalido");
 
             if (erro.Count > 0)
                 return erro;

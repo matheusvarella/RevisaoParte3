@@ -15,7 +15,7 @@ namespace ValidacaoCliente
                 var clienteComErro = ValidadorCliente.ValidarCliente(item);
 
                 if (clienteComErro != null)
-                    clienteErros.Add(new ClienteErro(clienteComErro));
+                    clienteErros.Add(new ClienteErro(item, clienteComErro));
             }
 
             if (clienteErros.Count > 0)
